@@ -8,6 +8,9 @@ fi
 # Add local zshrc
 [[ -s "$HOME/.zshrc.local" ]] && source "$HOME/.zshrc.local" 
 
+# Make VSCode the default editor
+export EDITOR="code --wait"
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -16,6 +19,10 @@ DISABLE_AUTO_UPDATE="true"
 plugins=(git fzf z git)
 
 source $ZSH/oh-my-zsh.sh
+
+# Add Aliases
+alias gs='git status'
+alias g='git'
 
 # User configuration
 
@@ -33,3 +40,9 @@ fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Ruby
+if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
+  export PATH=/opt/homebrew/opt/ruby/bin:$PATH
+  export PATH=`gem environment gemdir`/bin:$PATH
+fi
