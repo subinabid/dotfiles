@@ -23,6 +23,7 @@ source $ZSH/oh-my-zsh.sh
 # Add Aliases
 alias gs='git status'
 alias g='git'
+eval "$(gh copilot alias -- zsh)" # Github Copilot alias
 
 # User configuration
 
