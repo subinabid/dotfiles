@@ -38,6 +38,12 @@ if [ -x "$(command -v exa)" ]; then
     alias le='exa --colour=always --long --tree --level=2'
 fi
 
+# exa is replaced with eza
+if [ -x "$(command -v eza)" ]; then
+    alias ls='eza --colour=always --long --tree --level=1'
+    alias le='eza --colour=always --long --tree --level=2'
+fi
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
