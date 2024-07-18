@@ -1,0 +1,27 @@
+[submodule "tmux/.tmux/plugins/tpm"]
+	path = tmux/.tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
+[submodule "tmux/.tmux/plugins/tmux-open"]
+	path = tmux/.tmux/plugins/tmux-open
+	url = https://github.com/tmux-plugins/tmux-open
+[submodule "tmux/.tmux/plugins/tmux-sensible"]
+	path = tmux/.tmux/plugins/tmux-sensible
+	url = https://github.com/tmux-plugins/tmux-sensible
+[submodule "tmux/.tmux/plugins/tmux-yank"]
+	path = tmux/.tmux/plugins/tmux-yank
+	url = https://github.com/tmux-plugins/tmux-yank
+[submodule "tmux/.tmux/plugins/tmux-pain-control"]
+	path = tmux/.tmux/plugins/tmux-pain-control
+	url = https://github.com/tmux-plugins/tmux-pain-control
+[submodule "tmux/.tmux/plugins/tmux-fzf-url"] 
+	path = tmux/.tmux/plugins/tmux-fzf-url
+	url = https://github.com/wfxr/tmux-fzf-url
+[submodule "tmux/.tmux/plugins/tmux-sidebar"]
+	path = tmux/.tmux/plugins/tmux-sidebar
+	url = https://github.com/tmux-plugins/tmux-sidebar
+[submodule "tmux/.tmux/plugins/tmux-fpp"]
+	path = tmux/.tmux/plugins/tmux-fpp
+	url = https://git::@github.com/tmux-plugins/tmux-fpp
+[submodule "tmux/.tmux/plugins/tmux"]
+	path = tmux/.tmux/plugins/tmux
+	url = https://git::@github.com/nordtheme/tmux
