@@ -21,6 +21,7 @@ plugins=(git fzf z git)
 source $ZSH/oh-my-zsh.sh
 
 # Add Aliases
+alias ll='yazi'
 alias gs='git status'
 alias g='git'
 eval "$(gh copilot alias -- zsh)" # Github Copilot alias
@@ -53,3 +54,17 @@ if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
   export PATH=/opt/homebrew/opt/ruby/bin:$PATH
   export PATH=`gem environment gemdir`/bin:$PATH
 fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Load chruby and set the default Ruby version
+source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+source /opt/homebrew/opt/chruby/share/chruby/auto.sh
+chruby ruby-3.3.5
+# Above lines are added to run jekyll
+# https://jekyllrb.com/docs/installation/macos/
+
+# Added by Antigravity
+export PATH="/Users/sabid/.antigravity/antigravity/bin:$PATH"
