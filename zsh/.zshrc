@@ -24,7 +24,7 @@ source $ZSH/oh-my-zsh.sh
 alias ll='yazi'
 alias gs='git status'
 alias g='git'
-eval "$(gh copilot alias -- zsh)" # Github Copilot alias
+# eval "$(gh copilot alias -- zsh)" # Github Copilot alias
 
 # User configuration
 
@@ -68,3 +68,6 @@ chruby ruby-3.3.5
 
 # Added by Antigravity
 export PATH="/Users/sabid/.antigravity/antigravity/bin:$PATH"
+
+# Bind Shift+Enter (sequence may vary by terminal)
+bindkey '^[[13;2u' self-insert-unmeta
